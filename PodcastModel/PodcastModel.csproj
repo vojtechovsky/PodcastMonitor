@@ -30,7 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +44,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Feed.cs" />
+    <Compile Include="Migrations\201303101628024_first_stuff.cs" />
+    <Compile Include="Migrations\201303101628024_first_stuff.Designer.cs">
+      <DependentUpon>201303101628024_first_stuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303101631532_Feed_AddUri.cs" />
+    <Compile Include="Migrations\201303101631532_Feed_AddUri.Designer.cs">
+      <DependentUpon>201303101631532_Feed_AddUri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303101633138_Feed_AddMaxLengthForUri.cs" />
+    <Compile Include="Migrations\201303101633138_Feed_AddMaxLengthForUri.Designer.cs">
+      <DependentUpon>201303101633138_Feed_AddMaxLengthForUri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PodcastContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201303101628024_first_stuff.resx">
+      <DependentUpon>201303101628024_first_stuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303101631532_Feed_AddUri.resx">
+      <DependentUpon>201303101631532_Feed_AddUri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303101633138_Feed_AddMaxLengthForUri.resx">
+      <DependentUpon>201303101633138_Feed_AddMaxLengthForUri.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

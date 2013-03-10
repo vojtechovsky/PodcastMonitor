@@ -17,7 +17,7 @@ namespace Podcasts.Tests.Controllers
             IEnumerable<string> result = controller.Get().ToArray();
 
             // Assert
-            Assert.NotNull(result);
+            Assert.NotNull(result);  
             Assert.Equal(2, result.Count());
             Assert.Equal("value1", result.ElementAt(0));
             Assert.Equal("value2", result.ElementAt(1));
