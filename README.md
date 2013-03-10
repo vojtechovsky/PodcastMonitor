@@ -1,4 +1,4 @@
 PodcastMonitor
 ==============
 
-Keep podcast listening in sync across platforms
+Keep podcast listening in sync across platforms.
