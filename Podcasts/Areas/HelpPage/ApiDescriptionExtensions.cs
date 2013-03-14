@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace Podcasts.Areas.HelpPage
+namespace Web.Podcasts.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

@@ -1,9 +1,9 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using Podcasts.Areas.HelpPage.Models;
+using Web.Podcasts.Areas.HelpPage.Models;
 
-namespace Podcasts.Areas.HelpPage.Controllers
+namespace Web.Podcasts.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

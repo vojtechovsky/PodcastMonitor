@@ -1,4 +1,4 @@
-namespace Podcasts.Areas.HelpPage
+namespace Web.Podcasts.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

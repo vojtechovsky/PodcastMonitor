@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace Podcasts.Areas.HelpPage
+namespace Web.Podcasts.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

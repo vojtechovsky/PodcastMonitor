@@ -7,9 +7,9 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Description;
-using Podcasts.Areas.HelpPage.Models;
+using Web.Podcasts.Areas.HelpPage.Models;
 
-namespace Podcasts.Areas.HelpPage
+namespace Web.Podcasts.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {
