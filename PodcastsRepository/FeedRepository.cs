@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using PodcastModel;
 using Stores;
@@ -16,9 +17,23 @@ namespace PodcastsRepository
 
         public IEnumerable<Feed> GetAll()
         {
-            var feeds = from f in _feedStore.CreateQuery()
-                       select f;
+            List<Feed> feeds;
+            try
+            {
+                feeds = (from f in _feedStore.CreateQuery()
+                       select f).ToList();
+            
+            }
+            catch (Exception e)
+            {
 
+                feeds = new List<Feed>
+                            {
+                                new Feed{Id = 1, Uri = e.Message, Name=e.GetBaseException().StackTrace, Category = e.InnerException.ToString()},
+                                new Feed{Id = 2, Uri = "myuri2", Name= "22222", Category = "stuff"}
+                            }; ;
+            }
+            
             return feeds;
         }
 
