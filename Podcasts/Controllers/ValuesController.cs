@@ -24,17 +24,21 @@ namespace Web.Podcasts.Controllers
         }
 
         // GET api/values
-        public IEnumerable<Feed> Get()
+        public IEnumerable<Feed> GetAll()
         {
-            var feeds = FeedRepository.Get();
+            var feeds = FeedRepository.GetAll();
             return feeds;
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public Feed Get(int id)
         {
             var feed = FeedRepository.Get(id);
-            return feed.Name;
+            if (feed == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+            return feed;
         }
 
         // POST api/values

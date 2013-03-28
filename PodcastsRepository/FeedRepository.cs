@@ -14,7 +14,7 @@ namespace PodcastsRepository
             _feedStore = feedStore;
         }
 
-        public IEnumerable<Feed> Get()
+        public IEnumerable<Feed> GetAll()
         {
             var feeds = from f in _feedStore.CreateQuery()
                        select f;
@@ -28,6 +28,14 @@ namespace PodcastsRepository
                         where f.Id == id
                         select f;
             return feeds.FirstOrDefault();
+        }
+
+        public IEnumerable<Feed> GetByCategory(string category)
+        {
+            var feeds = from f in _feedStore.CreateQuery()
+                        where f.Category == category
+                        select f;
+            return feeds;
         }
 
         public void Put(Feed item)

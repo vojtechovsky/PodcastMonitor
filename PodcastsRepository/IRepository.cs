@@ -4,9 +4,11 @@ namespace PodcastsRepository
 {
     public interface IRepository<T>
     {
-        IEnumerable<T> Get();
+        IEnumerable<T> GetAll();
 
         T Get(int id);
+
+        IEnumerable<T> GetByCategory(string category);
 
         void Put(T item);
 
