@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastsDataModel", "PodcastsDataModel\PodcastsDataModel.csproj", "{B67C8AAB-96C0-403A-A3C8-BD3C67050A25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastsDataModelConsole", "PodcastsDataModelConsole\PodcastsDataModelConsole.csproj", "{5A46299C-D138-45D2-B300-F8ED8EC0AD9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B67C8AAB-96C0-403A-A3C8-BD3C67050A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67C8AAB-96C0-403A-A3C8-BD3C67050A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67C8AAB-96C0-403A-A3C8-BD3C67050A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67C8AAB-96C0-403A-A3C8-BD3C67050A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A46299C-D138-45D2-B300-F8ED8EC0AD9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A46299C-D138-45D2-B300-F8ED8EC0AD9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A46299C-D138-45D2-B300-F8ED8EC0AD9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A46299C-D138-45D2-B300-F8ED8EC0AD9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
