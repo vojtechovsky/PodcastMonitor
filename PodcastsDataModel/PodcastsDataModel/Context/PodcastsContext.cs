@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
+using PodcastMonitor.DataModel.Model;
 
-namespace PodcastsDataModel.Model
+namespace PodcastMonitor.DataModel.Context
 {
     public class PodcastsContext : DbContext
     {

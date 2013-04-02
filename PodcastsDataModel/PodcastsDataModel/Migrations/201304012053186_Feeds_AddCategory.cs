@@ -1,8 +1,7 @@
-namespace PodcastsDataModel.Migrations
+using System.Data.Entity.Migrations;
+
+namespace PodcastMonitor.DataModel.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
-    
     public partial class Feeds_AddCategory : DbMigration
     {
         public override void Up()

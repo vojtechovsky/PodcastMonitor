@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PodcastsDataModel.Model
+namespace PodcastMonitor.DataModel.Model
 {
     public class Feed
     {

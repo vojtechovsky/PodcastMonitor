@@ -1,37 +1,21 @@
-using System.Collections.Generic;
-using System.Data.Entity.Migrations.Model;
-using System.Data.Entity.Migrations.Sql;
-using PodcastsDataModel.Model;
+using PodcastMonitor.DataModel.Context;
+using PodcastMonitor.DataModel.Model;
+using System.Data.Entity.Migrations;
 
-namespace PodcastsDataModel.Migrations
+namespace PodcastMonitor.DataModel.Migrations
 {
-    using System.Data.Entity.Migrations;
-
-    public sealed class Configuration : DbMigrationsConfiguration<Model.PodcastsContext>
+    public sealed class Configuration : DbMigrationsConfiguration<PodcastsContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(Model.PodcastsContext context)
+        protected override void Seed(PodcastsContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
-            var cat = new Category {Name = "stuff"};
-            context.Categories.Add(cat);
-            context.Feeds.Add(new Feed{Category = cat, Name = ""})
-
+            var cat = new Category {Id = 1, Name = "stuff"};
+            context.Categories.AddOrUpdate(c => c.Id, cat);
+            context.Feeds.AddOrUpdate(f => f.Id, new Feed { Id = 1, Category = cat, Name = "FeedName", Uri = "httpstuff" });
         }
     }
 }

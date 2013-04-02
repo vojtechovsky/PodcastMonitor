@@ -7,8 +7,8 @@
     <ProjectGuid>{B67C8AAB-96C0-403A-A3C8-BD3C67050A25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PodcastsDataModel</RootNamespace>
-    <AssemblyName>PodcastsDataModel</AssemblyName>
+    <RootNamespace>PodcastMonitor.DataModel</RootNamespace>
+    <AssemblyName>PodcastMonitor.DataModel</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\PodcastMonitor.Services\packages\AutoMapper.2.2.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -54,7 +57,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Feed.cs" />
-    <Compile Include="Model\PodcastsContext.cs" />
+    <Compile Include="Context\PodcastsContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +67,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201304012053186_Feeds_AddCategory.resx">
       <DependentUpon>201304012053186_Feeds_AddCategory.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304012106050_Category_AddLengthToName.resx">
       <DependentUpon>201304012106050_Category_AddLengthToName.cs</DependentUpon>
