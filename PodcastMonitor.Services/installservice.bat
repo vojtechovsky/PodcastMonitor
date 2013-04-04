@@ -1,0 +1,1 @@
+installutil /ShowCallStack PodcastMonitor.Services.Feed.Application.exe

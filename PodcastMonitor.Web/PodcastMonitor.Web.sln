@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Web.Api", "PodcastMonitor.Web.Api\PodcastMonitor.Web.Api.csproj", "{2E72B26E-EF17-4D33-8A63-B64C701C51DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Services.Feed.Contracts", "..\PodcastMonitor.Common\PodcastMonitor.Services.Feed.Contracts\PodcastMonitor.Services.Feed.Contracts.csproj", "{9A41411C-8D59-4D6F-A043-4AF5B45B459C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E72B26E-EF17-4D33-8A63-B64C701C51DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E72B26E-EF17-4D33-8A63-B64C701C51DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E72B26E-EF17-4D33-8A63-B64C701C51DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E72B26E-EF17-4D33-8A63-B64C701C51DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A41411C-8D59-4D6F-A043-4AF5B45B459C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A41411C-8D59-4D6F-A043-4AF5B45B459C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A41411C-8D59-4D6F-A043-4AF5B45B459C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A41411C-8D59-4D6F-A043-4AF5B45B459C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

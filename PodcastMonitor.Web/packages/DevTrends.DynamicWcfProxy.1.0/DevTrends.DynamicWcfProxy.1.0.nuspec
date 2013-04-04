@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DevTrends.DynamicWcfProxy</id>
+    <version>1.0</version>
+    <authors>Paul Hiles</authors>
+    <owners>Paul Hiles</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dynamically generates client proxies for internal WCF services where you can share contract assemblies.</description>
+    <tags>dynamic wcf client proxy</tags>
+    <dependencies>
+      <dependency id="Castle.Core" version="3.0.0.4001" />
+    </dependencies>
+    <references>
+      <reference file="DevTrends.DynamicWcfProxy.dll" />
+    </references>
+  </metadata>
+</package>
