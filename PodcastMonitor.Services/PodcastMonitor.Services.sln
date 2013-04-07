@@ -17,6 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Services.Feed.Contracts", "..\PodcastMonitor.Common\PodcastMonitor.Services.Feed.Contracts\PodcastMonitor.Services.Feed.Contracts.csproj", "{9A41411C-8D59-4D6F-A043-4AF5B45B459C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D0951C90-0AD2-498C-95F5-AE5F4BB00E91}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

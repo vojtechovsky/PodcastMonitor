@@ -66,6 +66,10 @@
     <Compile Include="Migrations\201304012106050_Category_AddLengthToName.Designer.cs">
       <DependentUpon>201304012106050_Category_AddLengthToName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304062103447_AddFeedSetsAndUsers.cs" />
+    <Compile Include="Migrations\201304062103447_AddFeedSetsAndUsers.Designer.cs">
+      <DependentUpon>201304062103447_AddFeedSetsAndUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Feed.cs" />
@@ -83,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304012106050_Category_AddLengthToName.resx">
       <DependentUpon>201304012106050_Category_AddLengthToName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304062103447_AddFeedSetsAndUsers.resx">
+      <DependentUpon>201304062103447_AddFeedSetsAndUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

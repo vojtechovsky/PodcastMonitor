@@ -2,6 +2,7 @@
 using System.ServiceModel;
 using System.ServiceProcess;
 using AutoMapper;
+using FeedRepository.Projections;
 using PodcastMonitor.DataRepository;
 using PodcastMonitor.Services.Feed.Contracts;
 using Unity.Wcf;
@@ -10,10 +11,10 @@ namespace PodcastMonitor.Services.Feed
 {
     public class FeedService : ServiceBase, IFeedService
     {
-        private readonly IDataRepository<DataModel.Model.Feed> _feedRepository;
+        private readonly IDataRepository<FeedProjection> _feedRepository;
         public ServiceHost ServiceHost = null;
 
-        public FeedService(IDataRepository<DataModel.Model.Feed> feedRepository)
+        public FeedService(IDataRepository<FeedProjection> feedRepository)
         {
             _feedRepository = feedRepository;
         }

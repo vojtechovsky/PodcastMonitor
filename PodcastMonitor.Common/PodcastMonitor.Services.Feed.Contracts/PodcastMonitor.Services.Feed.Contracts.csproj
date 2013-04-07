@@ -36,7 +36,6 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
     <Compile Include="Feed.cs" />
     <Compile Include="GetFeedsResponse.cs" />
     <Compile Include="IFeedService.cs" />

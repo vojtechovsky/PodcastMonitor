@@ -8,13 +8,25 @@ namespace PodcastMonitor.Services.Feed.Contracts
         [DataMember]
         public int Id { get; set; }
 
-        [DataMember(Name = "FeedName")]
+        [DataMember]
         public string Name { get; set; }
 
         [DataMember]
         public string Uri { get; set; }
 
         [DataMember]
-        public Category Category { get; set; }
+        public string CategoryName { get; set; }
+
+        [DataMember]
+        public int FeedSetId { get; set; }
+
+        [DataMember]
+        public string FeedSetName { get; set; }
+
+        [DataMember]
+        public int UserId { get; set; }
+
+        [DataMember]
+        public string UserName { get; set; }
     }
 }

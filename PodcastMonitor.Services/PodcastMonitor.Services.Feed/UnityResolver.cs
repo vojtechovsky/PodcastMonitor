@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using System.Data.Entity;
 using AutoMapper;
+using FeedRepository.Projections;
 using Microsoft.Practices.Unity;
 using PodcastMonitor.DataModel.Context;
 using PodcastMonitor.DataRepository;
@@ -25,7 +26,7 @@ namespace PodcastMonitor.Services.Feed
                 .RegisterType<DbContext, PodcastsContext>()
                 .RegisterType<IUnitOfWork, PodcastsContext>()
                 .RegisterType(typeof(IStore<>), typeof(Store<>))
-                .RegisterType<IDataRepository<DataModel.Model.Feed>, FeedRepository.FeedRepository>()
+                .RegisterType<IDataRepository<FeedProjection>, FeedRepository.FeedRepository>()
                 .RegisterType<IFeedService, FeedService>();
 
             return container;

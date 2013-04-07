@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Web.Frontend", "PodcastMonitor.Web.Frontend\PodcastMonitor.Web.Frontend.csproj", "{981B9BBB-9E7F-4A44-A728-E57950B23448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Web.Frontend.Tests", "PodcastMonitor.Web.Frontend.Tests\PodcastMonitor.Web.Frontend.Tests.csproj", "{7750F15C-A6BC-4C36-9FA9-CE0FF6C17542}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{981B9BBB-9E7F-4A44-A728-E57950B23448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981B9BBB-9E7F-4A44-A728-E57950B23448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981B9BBB-9E7F-4A44-A728-E57950B23448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981B9BBB-9E7F-4A44-A728-E57950B23448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7750F15C-A6BC-4C36-9FA9-CE0FF6C17542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7750F15C-A6BC-4C36-9FA9-CE0FF6C17542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7750F15C-A6BC-4C36-9FA9-CE0FF6C17542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7750F15C-A6BC-4C36-9FA9-CE0FF6C17542}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -8,6 +8,8 @@ namespace PodcastMonitor.DataModel.Context
     {
         public DbSet<Feed> Feeds { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<FeedSet> FeedSets { get; set; }
+        public DbSet<FeedUser> FeedUsers { get; set; }
 
         public PodcastsContext()
         { }

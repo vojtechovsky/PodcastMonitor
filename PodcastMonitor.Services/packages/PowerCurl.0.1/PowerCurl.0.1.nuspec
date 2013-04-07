@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>PowerCurl</id>
+    <version>0.1</version>
+    <title>PowerCurl</title>
+    <authors>Adam Anderly</authors>
+    <owners>Adam Anderly</owners>
+    <projectUrl>https://github.com/anderly/PowerCurl</projectUrl>
+    <iconUrl>http://www.gravatar.com/avatar/7c1ac7f55925b636ca3284cc93b2d58c.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple curl-like module for PowerShell. Adds curl-like functionality to the Nuget Package Manager Console inside visual studio.
+
+If you're working with REST APIs like Twilio, Azure, etc., this is a huge timesaver for quickly testing REST calls from the NuGet Package Manager Console.</description>
+    <summary>A simple curl-like module for PowerShell. Perform curl-like calls inside Visual Studio NuGet Package Manager Console.</summary>
+    <tags>rest testing curl mvc mvc3 twilio azure</tags>
+    <references />
+  </metadata>
+</package>
