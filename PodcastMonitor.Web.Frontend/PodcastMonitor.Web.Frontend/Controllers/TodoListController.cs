@@ -6,18 +6,35 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Mvc;
 using PodcastMonitor.Web.Frontend.Filters;
 using PodcastMonitor.Web.Frontend.Models;
 
 namespace PodcastMonitor.Web.Frontend.Controllers
 {
-    [Authorize]
+    [System.Web.Http.Authorize]
     public class FeedListController : ApiController
     {
+        public ActionResult ProductDetail(long id)
+        {
+            using (var client = new HttpClient())
+            {
+                var feedDetailUrl = Url.RouteUrl(
+                    "DefaultApi",
+                    new { httproute = "", controller = "Feeds", id = id },
+                    Request.Url.Scheme
+                );
+                var model = client
+                            .GetAsync(feedDetailUrl)
+                            .Result
+                            .Content.ReadAsAsync<Feed>().Result;
 
+                return View(model);
+            }
+        }
     }
 
-    [Authorize]
+    [System.Web.Http.Authorize]
     public class TodoListController : ApiController
     {
         private TodoItemContext db = new TodoItemContext();

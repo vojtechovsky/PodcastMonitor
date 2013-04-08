@@ -84,10 +84,6 @@
       <Project>{B67C8AAB-96C0-403A-A3C8-BD3C67050A25}</Project>
       <Name>PodcastMonitor.DataModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataRepository\PodcastMonitor.DataRepository.csproj">
-      <Project>{A31AE070-F7D3-4C9D-972C-E12AC4B45D38}</Project>
-      <Name>PodcastMonitor.DataRepository</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FeedRepository\FeedRepository.csproj">
       <Project>{728AF626-B430-41F0-88C8-0A9AE694C7DB}</Project>
       <Name>FeedRepository</Name>

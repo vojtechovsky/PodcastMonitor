@@ -191,8 +191,6 @@
     </Compile>
     <Compile Include="Mappers\Feeds\FeedMapping.cs" />
     <Compile Include="Mappers\MapperConfiguration.cs" />
-    <Compile Include="Models\Feed\CategoryViewModel.cs" />
-    <Compile Include="Models\Feed\FeedViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -318,6 +316,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\Feed\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -326,6 +325,10 @@
     <ProjectReference Include="..\..\PodcastMonitor.Common\PodcastMonitor.Services.Feed.Contracts\PodcastMonitor.Services.Feed.Contracts.csproj">
       <Project>{9A41411C-8D59-4D6F-A043-4AF5B45B459C}</Project>
       <Name>PodcastMonitor.Services.Feed.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PodcastMonitor.Web.Api.Models\PodcastMonitor.Web.Api.Models.csproj">
+      <Project>{F8588A38-D586-40C0-87D7-BBF724CCF296}</Project>
+      <Name>PodcastMonitor.Web.Api.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
