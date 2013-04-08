@@ -42,6 +42,16 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PodcastMonitor.Common\DataRepository\PodcastMonitor.DataRepository.csproj">
+      <Project>{A31AE070-F7D3-4C9D-972C-E12AC4B45D38}</Project>
+      <Name>PodcastMonitor.DataRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PodcastMonitor.Web\PodcastMonitor.Web.Api.Models\PodcastMonitor.Web.Api.Models.csproj">
+      <Project>{F8588A38-D586-40C0-87D7-BBF724CCF296}</Project>
+      <Name>PodcastMonitor.Web.Api.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

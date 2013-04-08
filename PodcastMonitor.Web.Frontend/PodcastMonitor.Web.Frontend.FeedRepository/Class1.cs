@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using PodcastMonitor.DataRepository;
+using PodcastMonitor.Web.Api.Models.Feed;
 
 namespace PodcastMonitor.Web.Frontend.FeedRepository
 {
-    public class FeedRepository
+    public class FeedRepository : IDataRepository<FeedViewModel>
     {
+        public IEnumerable<FeedViewModel> GetData(string sortBy)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IEnumerable<FeedViewModel> GetDataForUser(string sortBy, int userId)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

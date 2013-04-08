@@ -357,6 +357,12 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PodcastMonitor.Web\PodcastMonitor.Web.Api.Models\PodcastMonitor.Web.Api.Models.csproj">
+      <Project>{F8588A38-D586-40C0-87D7-BBF724CCF296}</Project>
+      <Name>PodcastMonitor.Web.Api.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
