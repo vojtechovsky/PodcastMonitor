@@ -8,6 +8,8 @@
 
         public string Uri { get; set; }
 
+        public int CategoryId { get; set; }
+
         public string CategoryName { get; set; }
 
         public int FeedSetId { get; set; }
