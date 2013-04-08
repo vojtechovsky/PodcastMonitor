@@ -12,10 +12,12 @@ namespace PodcastMonitor.Web.Api.Mappers.Feeds
             Mapper.CreateMap<Feed, FeedViewModel>()
                 .ForMember(dest => dest.Id, o => o.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Name, o => o.MapFrom(src => src.Name))
+                .ForMember(dest => dest.FeedSetId, o => o.MapFrom(src => src.FeedSetId))
+                .ForMember(dest => dest.FeedSetName, o => o.MapFrom(src => src.FeedSetName))
+                .ForMember(dest => dest.UserId, o => o.MapFrom(src => src.UserId))
+                .ForMember(dest => dest.UserName, o => o.MapFrom(src => src.UserName))
                 .ForMember(dest => dest.Uri, o => o.MapFrom(src => src.Uri))
-                ;
-
-            Mapper.CreateMap<Category, CategoryViewModel>();
+                .ForMember(dest => dest.Category, o => o.MapFrom(src => new CategoryViewModel{ Id = src.CategoryId, Name = src.CategoryName}));
         }
     }
 }
