@@ -1,4 +1,21 @@
-﻿body, input, button {
+﻿#feedItem
+ {
+     display: inline;
+     margin-left: 5px;
+     padding-left: 5px;
+     white-space: nowrap; 
+     background-color: aqua;
+ }
+
+.display-field {
+      display: inline;  
+}
+
+.display-label {
+      display: inline;  
+}
+
+body, input, button {
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     font-size: 1.2em;
 }

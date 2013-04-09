@@ -1,0 +1,22 @@
+﻿@model PodcastMonitor.Web.Api.Models.Feed.FeedListViewModel
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/jquery")     
+@{
+    ViewBag.Title = "title";
+}
+<script> $(document).ready(function () { });</script>
+<h2>title</h2>  
+
+<div id="navcontainer">
+    
+        @foreach (var item in Model.Feeds)
+        {
+            <div id="feedItem">
+                @Html.DisplayFor(x => item)    
+            </div>
+         
+        }
+    
+</div>
+
+    

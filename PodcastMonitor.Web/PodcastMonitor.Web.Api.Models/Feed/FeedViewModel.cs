@@ -1,7 +1,14 @@
 ﻿
 
+using System.Collections.Generic;
+
 namespace PodcastMonitor.Web.Api.Models.Feed
 {
+    public class FeedListViewModel
+    {
+        public List<FeedViewModel> Feeds { get; set; }
+    }
+
     public class FeedViewModel
     {
         public int Id { get; set; }

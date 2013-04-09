@@ -19,10 +19,10 @@ namespace PodcastMonitor.Web.Api.Controllers
         }
 
         // GET api/feeds
-        public FeedViewModel Get()
+        public FeedListViewModel Get()
         {
             var feeds = _feedsService.Value.GetFeeds();
-            var feedsViewModel = _mapper.Map<FeedViewModel>(feeds.Feeds.First());
+            var feedsViewModel = _mapper.Map<FeedListViewModel>(feeds);
             return feedsViewModel;
         }
 

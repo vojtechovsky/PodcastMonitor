@@ -9,6 +9,8 @@ namespace PodcastMonitor.Web.Api.Mappers.Feeds
     {
         public static void Initialise()
         {
+            Mapper.CreateMap<GetFeedsResponse, FeedListViewModel>();
+
             Mapper.CreateMap<Feed, FeedViewModel>()
                 .ForMember(dest => dest.Id, o => o.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Name, o => o.MapFrom(src => src.Name))
