@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Web.Api.Mode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Web.Frontend.FeedRepository", "PodcastMonitor.Web.Frontend.FeedRepository\PodcastMonitor.Web.Frontend.FeedRepository.csproj", "{063F214B-8F8F-40CB-B03C-8D550E0DA8D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodcastMonitor.Web.UI.Common", "..\PodcastMonitor.Common\PodcastMonitor.Web.UI.Common\PodcastMonitor.Web.UI.Common.csproj", "{8903ADB3-4F9A-4565-A924-C4DA44208478}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{063F214B-8F8F-40CB-B03C-8D550E0DA8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{063F214B-8F8F-40CB-B03C-8D550E0DA8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{063F214B-8F8F-40CB-B03C-8D550E0DA8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8903ADB3-4F9A-4565-A924-C4DA44208478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8903ADB3-4F9A-4565-A924-C4DA44208478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8903ADB3-4F9A-4565-A924-C4DA44208478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8903ADB3-4F9A-4565-A924-C4DA44208478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

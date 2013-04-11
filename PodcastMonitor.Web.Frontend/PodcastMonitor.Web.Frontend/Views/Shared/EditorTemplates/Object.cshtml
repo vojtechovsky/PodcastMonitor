@@ -1,0 +1,45 @@
+﻿@Html.Raw(ViewData.ModelMetadata.ContainerType)
+<div class="editor">
+    @foreach (var property in ViewData.ModelMetadata.Properties.Where(x => x.ShowForEdit))
+    {
+        var hideOnLoad = property.AdditionalValues.ContainsKey("HideOnLoad");
+        <div class="editor-item @(hideOnLoad ? "hideOnLoad" : "")">
+            @if (property.HideSurroundingHtml)
+            {
+                @Html.Editor(property.PropertyName)
+            }
+            else
+            {
+                if (property.IsComplexType && typeof(System.Collections.IEnumerable).IsAssignableFrom(property.ModelType))
+                {
+                    if (!string.IsNullOrEmpty(property.TemplateHint))
+                    {
+                        <div class="editor-label">@Html.Label(property.PropertyName)</div>
+                        <div class="editor-field">
+                            @Html.Editor(property.PropertyName, property.TemplateHint)                            
+                        </div>
+                    }
+                    else
+                    {
+                        @Html.Editor(property.PropertyName)
+                    }                    
+                }
+                else if (property.IsComplexType)
+                {
+                        @Html.Editor(property.PropertyName)
+                }
+                else
+                {
+                    if (!string.IsNullOrEmpty(property.DisplayName))
+                    {
+                        <div class="editor-label">@Html.Label(property.PropertyName)@(property.IsRequired ? Html.Raw("<span class=\"req\">*</span>") : null)</div>
+                    }
+                    <div class="editor-field">
+                        @Html.Editor(property.PropertyName)
+                        @Html.ValidationMessage(property.PropertyName)
+                    </div>
+                }
+            }
+        </div>
+    }
+</div>

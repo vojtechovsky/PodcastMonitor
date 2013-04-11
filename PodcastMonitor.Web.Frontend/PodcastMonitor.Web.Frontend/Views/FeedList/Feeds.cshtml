@@ -1,22 +1,24 @@
 ﻿@model PodcastMonitor.Web.Api.Models.Feed.FeedListViewModel
-@Styles.Render("~/Content/css")
-@Scripts.Render("~/bundles/jquery")     
-@{
-    ViewBag.Title = "title";
+ 
+@using (Html.BeginForm(null, null, FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+    <div class="area">
+        <fieldset>
+            <legend>Feeds</legend>ssss
+            @Html.EditorForModel()
+        </fieldset>
+        <input type="submit" value="Save" />            
+  
+    </div>
 }
-<script> $(document).ready(function () { });</script>
-<h2>title</h2>  
-
-<div id="navcontainer">
-    
-        @foreach (var item in Model.Feeds)
-        {
-            <div id="feedItem">
-                @Html.DisplayFor(x => item)    
-            </div>
-         
-        }
-    
-</div>
-
+        
+@if (@User.Identity.IsAuthenticated)
+{
+    @section scripts {
+        @Scripts.Render("~/bundles/knockout")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/feeds")
+    }
+}
     

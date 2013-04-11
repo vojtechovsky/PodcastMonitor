@@ -11,27 +11,31 @@ using PodcastMonitor.Web.Api.Models.Feed;
 using PodcastMonitor.Web.Frontend.Filters;
 using PodcastMonitor.Web.Frontend.Models;
 using RestSharp;
+using RestSharp.Deserializers;
 
 namespace PodcastMonitor.Web.Frontend.Controllers
 {
     [System.Web.Http.Authorize]
     public class FeedListController : Controller
     {
-        public ViewResult Feeds(long id)
+        public ViewResult Feeds(FeedListViewModel viewModel)
         {
             var client = new RestClient("http://localhost:52668/api");
             // client.Authenticator = new HttpBasicAuthenticator(username, password);
 
-            var request = new RestRequest("feeds/get", Method.GET);
+            var request = new RestRequest("feeds", Method.GET);
             //request.AddParameter("name", "value"); // adds to POST or URL querystring based on Method
-            request.AddUrlSegment("id", id.ToString()); // replaces matching token in request.Resource
+            //request.AddUrlSegment("id", id.ToString()); // replaces matching token in request.Resource
 
             request.AddHeader("header", "value");
 
             // or automatically deserialize result
             // return content type is sniffed but can be explicitly set via RestClient.AddHandler();
+
+
+            client.AddHandler( "application/json", new JsonDeserializer());
             var response2 = client.Execute<FeedListViewModel>(request);
-            var viewModel = response2.Data;
+            viewModel = response2.Data;
 
             // easy async support
             //client.ExecuteAsync(request, resp => Console.WriteLine(response.Content));

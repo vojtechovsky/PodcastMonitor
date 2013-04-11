@@ -24,13 +24,7 @@ namespace PodcastMonitor.Web.Api.Controllers
             var feeds = _feedsService.Value.GetFeeds();
             var feedsViewModel = _mapper.Map<FeedListViewModel>(feeds);
             return feedsViewModel;
-        }
-
-        // GET api/feeds/5
-        public string Get(int id)
-        {
-            return "value";
-        }
+        }   
 
         // POST api/feeds
         public void Post([FromBody]string value)

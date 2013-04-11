@@ -1,5 +1,10 @@
-﻿#feedItem
- {
+﻿.editor {padding-left:0px;} 
+.editor-item {width:35px !important;float:left !important; clear:none !important;} 
+.editor-label {width:100%;}
+.editor-field label {position:relative;top:2px;}
+ 
+#feedItem
+  {
      display: inline;
      margin-left: 5px;
      padding-left: 5px;

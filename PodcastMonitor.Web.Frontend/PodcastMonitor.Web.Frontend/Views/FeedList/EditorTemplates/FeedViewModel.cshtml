@@ -1,0 +1,57 @@
+﻿@model PodcastMonitor.Web.Api.Models.Feed.FeedViewModel
+
+@{
+    ViewBag.Title = "FeedViewModel";
+}
+
+<h2>FeedViewModel</h2>
+
+<fieldset>
+    <legend>FeedViewModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Uri)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Uri)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FeedSetId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FeedSetId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FeedSetName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FeedSetName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
